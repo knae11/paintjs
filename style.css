@@ -1,0 +1,56 @@
+@import "reset.css";
+
+:root {
+  --canvas-size: 500px;
+  --color-con-size: 30px;
+}
+body {
+  background-color: #f7f2e7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.canvas {
+  height: var(--canvas-size);
+  width: var(--canvas-size);
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 8px 10px 4px rgba(0, 0, 0, 0.21);
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.controls .controls_btn {
+  margin: 20px;
+}
+.controls_btn button {
+  all: unset;
+  cursor: pointer;
+  background-color: #d8d3cd;
+  padding: 5px 0px;
+  width: 70px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #797a7e;
+}
+
+.controls_btn button:active {
+  transform: scale(0.98);
+}
+.controls .controls_colors {
+  display: flex;
+}
+
+.controls_colors .controls_color {
+  width: var(--color-con-size);
+  height: var(--color-con-size);
+  cursor: pointer;
+  border-radius: 50%;
+}
